@@ -1,0 +1,47 @@
+body {
+  background-color: #171717;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+  width: 360px;
+  height: 750px;
+  margin: auto;
+  background-color: white;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 15px;
+}
+
+form {
+  width: 300px;
+  margin-left: 20px;
+}
+
+form label {
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+form input {
+  width: 80%;
+  padding: 7px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 7px;
+  outline: none;
+}
+
+input[type="button"] {
+  width: 320px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background-color: #49c1a2;
+  color: white;
+  font-size: 18px;
+}

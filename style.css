@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #272829;
+    color: #61677A;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: #D8D9DA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    overflow: auto;
+    float: left;
+    background-color: #D8D9DA;
+    color: #D8D9DA;
+    pointer-events: none;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #61677A;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 25px;
+    float: right;
+}
+
+.navbar a.active,
+.navbar a:hover {
+    font-weight: bolder;
+    color: #272829;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+    justify-content: space-between;
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin: 20px 0 40px;
+}
+
+.btn {
+    position: relative;
+    width: 180px;
+    height: 40px;
+    display: inline-flex;
+    background: #D8D9DA;
+    color: #272829;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 3px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius: 40px;
+
+}
+
+.home-img {
+    border-radius: 50%;
+    width: 20%;
+    justify-content: center
+}
+
+.home-sosmed a {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    z-index: 1;
+}
+
+.btn:hover {
+    color: white;
+    background: black;
+
+}
+
+.container {
+    width: 360px;
+    height: 750px;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.container h1 {
+    align-items: center;
+    margin-left: 20;
+}
+
+form {
+    width: 300px;
+    margin-left: 20px;
+}
+
+form label {
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 80%;
+    padding: 1px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 7px;
+    outline: none;
+}
+
+input[type="button"] {
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #49c1a2;
+    color: white;
+    font-size: 18px;
+}
+
+.responsive-example {
+    margin: 30px;
+    padding: 2px;
+    text-align: center;
+    color: blue;
+}
+
+@media (max-width: 1200px) {
+    .responsive-example {
+        color: red;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .responsive-example {
+        color: green;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .responsive-example {
+        color: yellow;
+        font-size: 3rem;
+    }
+}

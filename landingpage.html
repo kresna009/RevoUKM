@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"
+        ><img
+          src="/image/logoweb2.png"
+          alt="logo website"
+          style="width: 100px; height: 100px"
+      /></a>
+      <nav class="navbar">
+        <a href="#"><i class="fa-solid fa-bars fa-shake"></i></a>
+        <a href="#">Portfolio</a>
+        <a href="#">About</a>
+        <a href="#" class="active">Home</a>
+      </nav>
+    </header>
+    <section class="home">
+      <div class="home-sosmed">
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <div class="home-content">
+        <h1>Hello, its Me</h1>
+        <h3>Section Jayapura</h3>
+        <p>This is my first website, thank you for visiting</p>
+        <a href="#" class="btn">More</a>
+      </div>
+      <img src="/image/PhotoProfile.jpg" alt="Profile Photo" class="home-img" />
+    </section>
+    <section class="form">
+      <div class="container">
+        <h1>REGISTER FORM</h1>
+        <form action="./form-data.html" method="post">
+          <div class="form-group">
+            <label for="nickname">nickname : </label><br /><input
+              type="text"
+              id="nickname"
+              name="nickname"
+              placeholder="nickname"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">input ur email: </label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email"
+              required
+            />
+            <br />
+          </div>
+          <div class="form-group">
+            <label for="age">Input ur age : </label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="21"
+              max="60"
+              required
+            />
+            <br />
+          </div>
+          <div class="form-group">
+            <label for="phone">input phone number : </label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="082-***-****"
+            />
+          </div>
+          <div class="form-group">
+            <br />
+            <select id="gender" name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+            <br />
+          </div>
+          <div class="form-group">
+            <br />
+            <label for="password">password : </label>
+            <input type="password" id="password" name="password" />
+            <br />
+          </div>
+          <div class="form-group">
+            <label for="games">Games</label><input type="radio" id="sames" />
+            <label for="sports">Sports</label
+            ><input type="radio" id="sports" /> <label for="music">Music</label
+            ><input type="radio" id="music" />
+            <br />
+          </div>
+          <input type="submit" value="submit data" />
+        </form>
+      </div>
+    </section>
+    <div class="container-responsive">
+      <h1 class="responsive-example">testing responsive</h1>
+    </div>
+    <div class="card">
+      <h1>FLEX</h1>
+      <div class="flex-box">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+      </div>
+    </div>
+    </section>
+
+  </body>
+</html>
